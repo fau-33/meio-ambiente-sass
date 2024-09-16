@@ -1,0 +1,109 @@
+$primary-color: #4CAF50;
+$secondary-color: #f2f2f2;
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: $primary-color;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+
+    nav {
+        ul {
+            list-style-type: none;
+            padding: 0;
+
+            li {
+                display: inline;
+                margin: 0 15px;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+
+    h2 {
+        color: $primary-color;
+    }
+}
+
+.logo {
+    max-width: 200px;
+    margin-top: 20px;
+}
+
+.project-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; // Permite que os itens se movam para a próxima linha
+}
+
+.project-item {
+    margin: 10px;
+    text-align: center;
+
+    img {
+        max-width: 150px; // Limita o tamanho da imagem
+        border-radius: 8px; // Adiciona bordas arredondadas
+        transition: transform 0.3s; // Adiciona uma transição suave
+    }
+
+    img:hover {
+        transform: scale(1.05); // Aumenta a imagem ao passar o mouse
+    }
+
+    p {
+        margin-top: 5px; // Espaçamento entre a imagem e o texto
+        font-weight: bold; // Destaca o texto
+    }
+}
+
+footer {
+    background-color: $secondary-color;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column; // Muda a direção da lista para coluna em telas menores
+        li {
+            margin-bottom: 10px; // Espaçamento entre os itens
+        }
+    }
+
+    .logo {
+        max-width: 150px;
+    }
+
+    .project-item img {
+        max-width: 120px; // Tamanho menor da imagem em telas menores
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        padding: 10px;
+    }
+
+    .logo, .project-item img {
+        max-width: 100px; // Tamanho ainda menor da imagem em telas muito pequenas
+    }
+}
