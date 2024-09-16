@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -60,6 +61,42 @@ section h2 {
 .project-item p {
   margin-top: 5px;
   font-weight: bold;
+}
+
+/* Estilos para a seção de contato */
+.contact-form {
+  max-width: 600px; /* Limita a largura do formulário */
+  margin: 0 auto; /* Centraliza o formulário */
+  padding: 20px;
+  border: 1px solid #4CAF50; /* Borda do formulário */
+  border-radius: 8px; /* Bordas arredondadas */
+  background-color: #f2f2f2; /* Fundo da seção */
+}
+
+.contact-form label {
+  display: block; /* Exibe os rótulos em bloco */
+  margin-bottom: 5px; /* Espaçamento abaixo dos rótulos */
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%; /* Largura total dos campos */
+  padding: 10px; /* Espaçamento interno */
+  margin-bottom: 15px; /* Espaçamento abaixo dos campos */
+  border: 1px solid #ccc; /* Borda dos campos */
+  border-radius: 4px; /* Bordas arredondadas */
+}
+
+.contact-form button {
+  background-color: #4CAF50; /* Cor do botão */
+  color: white; /* Cor do texto no botão */
+  padding: 10px 15px; /* Espaçamento interno do botão */
+  border: none; /* Remove a borda padrão */
+  border-radius: 4px; /* Bordas arredondadas no botão */
+  cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+}
+
+.contact-form button:hover {
+  background-color: #3d8b40; /* Escurece a cor ao passar o mouse */
 }
 
 footer {
